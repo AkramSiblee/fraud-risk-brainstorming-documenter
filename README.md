@@ -9,6 +9,10 @@ re-discussions), including group/component engagements.
 
 ## Setup
 
+New machine with nothing installed yet (VS Code, Node, Python, Claude Code)?
+See **`SETUP.md`** for the full first-time install walkthrough. If those are
+already installed:
+
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate       # Windows: .venv\Scripts\activate
