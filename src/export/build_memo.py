@@ -131,8 +131,13 @@ def build(ingested_json, topic_coverage_json, flags_json, register_rows_json, ou
                 run.font.color.rgb = RED
             _add_body(doc, catalog_desc, italic=True, color=GREY, size=9)
             if rec.get("supporting_excerpt"):
-                src = rec.get("source_session_id") or ""
-                _add_body(doc, f"\u201c{rec['supporting_excerpt']}\u201d  — {src}", size=10)
+                src_parts = []
+                if rec.get("source_session_id"):
+                    src_parts.append(rec["source_session_id"])
+                if rec.get("component_source"):
+                    src_parts.append(f"{rec['component_source']} (component)")
+                src_suffix = f"  — {'; '.join(src_parts)}" if src_parts else ""
+                _add_body(doc, f"\u201c{rec['supporting_excerpt']}\u201d{src_suffix}", size=10)
             if rec.get("boilerplate_flag"):
                 _add_body(doc, "\u26a0 Flagged: near-identical to the prior-year excerpt for this topic — "
                                "confirm this reflects current-year discussion.", bold=True, color=RED, size=9.5)
