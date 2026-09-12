@@ -1,0 +1,242 @@
+{
+  "topic_coverage_record": [
+    {
+      "topic_id": "A1",
+      "category": "Framing",
+      "status": "Evidenced",
+      "supporting_excerpt": "Marcus reminded the team to set aside any prior beliefs about management's honesty and integrity for purposes of this brainstorming session.",
+      "source_session_id": "S1",
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": []
+    },
+    {
+      "topic_id": "A2",
+      "category": "Framing",
+      "status": "Evidenced",
+      "supporting_excerpt": "Reviewed revenue streams: essentially all revenue is single-element \u2014 finished precision instruments shipped FOB shipping point, with no post-shipment service or installation obligations.",
+      "source_session_id": "S1",
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": []
+    },
+    {
+      "topic_id": "A3",
+      "category": "Framing",
+      "status": "Partially evidenced",
+      "supporting_excerpt": "Standard inventory and cash controls reviewed at a high level; nothing unusual noted. Detailed testing to follow in fieldwork.",
+      "source_session_id": "S1",
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": []
+    },
+    {
+      "topic_id": "B1",
+      "category": "Presumptions",
+      "status": "Evidenced",
+      "supporting_excerpt": "Team concluded the revenue-recognition fraud-risk presumption is rebutted for this specific revenue stream \u2014 no judgment-heavy allocation, no multi-element bundling, no consignment or bill-and-hold arrangements identified, control transfers cleanly at FOB shipping point.",
+      "source_session_id": "S1",
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": []
+    },
+    {
+      "topic_id": "B2",
+      "category": "Presumptions",
+      "status": "Evidenced",
+      "supporting_excerpt": "Reminded team that override is always presumed present regardless of the control environment. Reviewed manual journal entry approval process \u2014 dual sign-off required over $25,000; no instances of override noted to date.",
+      "source_session_id": "S1",
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": []
+    },
+    {
+      "topic_id": "C1",
+      "category": "Fraud Triangle",
+      "status": "Evidenced",
+      "supporting_excerpt": "Regional sales managers' bonuses are tied to quarterly bookings; new CFO has emphasized \"hitting the number\" in recent town halls.",
+      "source_session_id": "S1",
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": []
+    },
+    {
+      "topic_id": "C2",
+      "category": "Fraud Triangle",
+      "status": "Evidenced",
+      "supporting_excerpt": "Regional sales managers can approve customer credit memos up to $50,000 without a second signature.",
+      "source_session_id": "S1",
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": []
+    },
+    {
+      "topic_id": "C3",
+      "category": "Fraud Triangle",
+      "status": "Evidenced",
+      "supporting_excerpt": "Some tenured sales staff have expressed frustration that targets increased significantly under the new CFO, which could create rationalization for cutting corners.",
+      "source_session_id": "S1",
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": []
+    },
+    {
+      "topic_id": "E1",
+      "category": "Known Fraud",
+      "status": "Evidenced",
+      "supporting_excerpt": "Onboarding-survey tip re: undocumented extended payment terms (INC-01) \u2014 investigated and closed, S2. Possible Q4 shipping-document backdating (INC-02) \u2014 raised via ad-hoc session, unresolved, S3.",
+      "source_session_id": "S2",
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": []
+    },
+    {
+      "topic_id": "E2",
+      "category": "Known Fraud",
+      "status": "Not evidenced",
+      "supporting_excerpt": null,
+      "source_session_id": null,
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": [],
+      "notes_for_reviewer": "The whistleblower/ethics hotline is never raised in any session's notes \u2014 this is an omission (nobody asked), not a documented 'no complaints this year' conclusion."
+    },
+    {
+      "topic_id": "F1",
+      "category": "IT-Cyber-EUC",
+      "status": "Evidenced",
+      "supporting_excerpt": "Reviewed IT general controls testing scope for the ERP system (SAP Business One); no unusual access findings from the preliminary walkthrough.",
+      "source_session_id": "S1",
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": []
+    },
+    {
+      "topic_id": "F2",
+      "category": "IT-Cyber-EUC",
+      "status": "Not evidenced",
+      "supporting_excerpt": null,
+      "source_session_id": null,
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": []
+    },
+    {
+      "topic_id": "F3",
+      "category": "IT-Cyber-EUC",
+      "status": "Evidenced",
+      "supporting_excerpt": "Warranty reserve calculation is maintained in a standalone spreadsheet; agreed this will be included in this year's IT general controls / EUC review scope.",
+      "source_session_id": "S1",
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": []
+    },
+    {
+      "topic_id": "G1",
+      "category": "Unpredictability",
+      "status": "Evidenced",
+      "supporting_excerpt": "Agreed to perform an unannounced test of inventory counts at the main facility rather than providing advance notice, which appears to have been the predecessor's past practice.",
+      "source_session_id": "S1",
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": []
+    },
+    {
+      "topic_id": "H1",
+      "category": "Related Parties & SUTs",
+      "status": "Evidenced",
+      "supporting_excerpt": "Inquired of management regarding related-party transactions \u2014 none identified beyond standard officer compensation arrangements.",
+      "source_session_id": "S1",
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": []
+    },
+    {
+      "topic_id": "H2",
+      "category": "Related Parties & SUTs",
+      "status": "Evidenced",
+      "supporting_excerpt": "No significant unusual transactions noted in year-to-date activity.",
+      "source_session_id": "S1",
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": []
+    },
+    {
+      "topic_id": "I1",
+      "category": "Estimates",
+      "status": "Evidenced",
+      "supporting_excerpt": "Discussed key estimates: warranty reserve methodology and inventory obsolescence reserve. This ties directly to the predecessor auditor communication regarding a disputed warranty reserve adjustment.",
+      "source_session_id": "S1",
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": []
+    },
+    {
+      "topic_id": "K1",
+      "category": "First-Year",
+      "status": "Evidenced",
+      "supporting_excerpt": "Per AS 2610, the engagement team communicated with the predecessor auditor, Whitmore & Associates LLP. Whitmore confirmed no disagreements specifically characterized as fraud-related, but noted they had proposed a $2.1 million increase to the warranty reserve in FY2024, which management declined to book, characterizing it as immaterial.",
+      "source_session_id": "S1",
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": []
+    },
+    {
+      "topic_id": "K2",
+      "category": "First-Year",
+      "status": "Evidenced",
+      "supporting_excerpt": "Given the unadjusted difference not booked by the predecessor, agreed opening retained earnings and the warranty reserve opening balance warrant extended substantive testing this year rather than being accepted solely on the predecessor's clearance.",
+      "source_session_id": "S1",
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": []
+    }
+  ],
+  "fraud_risk_register": [
+    {
+      "risk_id": "R1",
+      "risk_description": "Warranty reserve estimate potentially biased toward understatement \u2014 predecessor proposed a $2.1M increase in FY2024 that management declined to book.",
+      "fraud_triangle_category": "Rationalization",
+      "assertion": "Valuation",
+      "accounts_affected": "Warranty reserve",
+      "source": "I1; K1",
+      "planned_response": ""
+    },
+    {
+      "risk_id": "R2",
+      "risk_description": "Management override via manual journal entries \u2014 standard presumption, no override observed to date.",
+      "fraud_triangle_category": "Opportunity",
+      "assertion": "Existence",
+      "accounts_affected": "Manual journal entries",
+      "source": "B2",
+      "planned_response": ""
+    },
+    {
+      "risk_id": "R3",
+      "risk_description": "Sales incentive compensation structure (bonuses tied to bookings, uncapped credit-memo authority, target pressure from new CFO) creates fraud-triangle exposure around revenue timing.",
+      "fraud_triangle_category": "Incentive/Pressure",
+      "assertion": "Cutoff",
+      "accounts_affected": "Revenue, accounts receivable",
+      "source": "C1; C2; C3",
+      "planned_response": ""
+    },
+    {
+      "risk_id": "R4",
+      "risk_description": "Possible Q4 shipping-document backdating for one distributor (~$340,000) identified via internal audit cutoff follow-up; not yet substantiated.",
+      "fraud_triangle_category": "Opportunity",
+      "assertion": "Cutoff",
+      "accounts_affected": "Revenue",
+      "source": "E1/INC-02",
+      "planned_response": ""
+    },
+    {
+      "risk_id": "R5",
+      "risk_description": "Opening balance risk on the warranty reserve and retained earnings given the predecessor's unbooked proposed adjustment.",
+      "fraud_triangle_category": "Unclassified",
+      "assertion": "Valuation",
+      "accounts_affected": "Warranty reserve, retained earnings (opening balance)",
+      "source": "K2",
+      "planned_response": ""
+    }
+  ]
+}

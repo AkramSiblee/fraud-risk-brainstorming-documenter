@@ -1,0 +1,25 @@
+{
+  "hard_gates": [
+    "Session S3 (ad-hoc) is missing a discussion date or attendee list \u2014 ISA 240.44 documentation requirement",
+    "INC-02 not yet routed through the Escalation Log (Step 6)",
+    "EQR checkpoint required (public-interest entity, 1 open Escalation Log entry) but not yet logged",
+    "Required 'final' session not yet logged"
+  ],
+  "graduated_flags": [
+    "A3: evidenced but thin \u2014 \"Standard inventory and cash controls reviewed at a high level; nothing unusual noted. Detailed testing to follow in fieldwork.\"",
+    "Session S2 (interim): this framework expects engagement-partner participation, but no attendee is listed as Partner"
+  ],
+  "changelog": [
+    {
+      "item": "E2 not evidenced in any session to date (The whistleblower/ethics hotline is never raised in any session's notes \u2014 this is an omission (nobody asked), not a documented 'no complaints this year' conclusion.)",
+      "status": "Pending \u2014 awaiting team confirmation",
+      "resolved_by_date": ""
+    },
+    {
+      "item": "F2 not evidenced in any session to date",
+      "status": "Pending \u2014 awaiting team confirmation",
+      "resolved_by_date": ""
+    }
+  ],
+  "memo_status": "DRAFT \u2014 Open Items Pending"
+}

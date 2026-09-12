@@ -1,0 +1,44 @@
+{
+  "hard_gates": [
+    "Component 'Thornbury Distribution (Pacific) Pty Ltd' has no Component Fraud Risk Input on file",
+    "Other-firm component 'Meridian FinPay Solutions Inc.' adequacy review not completed (status: pending (flagged thin at final session, S4))",
+    "EQR checkpoint required (public-interest entity, 1 open Escalation Log entry) but not yet logged"
+  ],
+  "graduated_flags": [
+    "A3: evidenced but thin \u2014 \"Brief mention of some inventory shrink noted at the Distribution Pacific warehouse in Q3 reporting. Nobody had more detail on this yet \u2014 fla\"",
+    "B1: rebuttal recorded but not tied to a specific revenue stream",
+    "D1: prior-year finding referenced but remediation status not stated",
+    "D1: current-year excerpt is a near-verbatim match to the prior-year excerpt (boilerplate)",
+    "F1: evidenced but thin \u2014 \"Elena to follow up on general ITGC testing at both Thornbury Manufacturing and FinPay.\"",
+    "F3: evidenced but thin \u2014 \"Noted the goodwill impairment model for the FinPay reporting unit is maintained in a standalone Excel file by the CFO's team.\"",
+    "F3: EUC/spreadsheet risk noted but never followed up for independent review",
+    "H2: evidenced but thin \u2014 \"Deal closed December 28, 2025. No further discussion of fair value support for the sale price. [S4:] No further fair value documentation has\"",
+    "H2: remains an open item even at the final session",
+    "I1: evidenced but thin \u2014 \"David noted in passing that the goodwill impairment model for the FinPay reporting unit has shown consistently favorable growth assumptions \"",
+    "I1: mentioned in passing but not substantively discussed as a bias/fraud risk indicator",
+    "Fraud-triangle coverage skewed to one factor \u2014 C1 evidenced, C2, C3 not evidenced for the same risk area"
+  ],
+  "changelog": [
+    {
+      "item": "C2 not evidenced in any session to date",
+      "status": "Pending \u2014 awaiting team confirmation",
+      "resolved_by_date": ""
+    },
+    {
+      "item": "C3 not evidenced in any session to date",
+      "status": "Pending \u2014 awaiting team confirmation",
+      "resolved_by_date": ""
+    },
+    {
+      "item": "J1 not evidenced in any session to date (Planning notes show the group REQUESTING component fraud summaries, but no instance of the group communicating its OWN identified fraud risk factors (e.g. covenant pressure, cyber exposure) outward to component auditors was found in any session.)",
+      "status": "Pending \u2014 awaiting team confirmation",
+      "resolved_by_date": ""
+    },
+    {
+      "item": "J4 not evidenced in any session to date (B2's discussion covers parent-level manual JE approval specifically, not top-side/consolidating entries at the group-consolidation level \u2014 these are distinct per Skill-Spec \u00a77.J4 and no session addresses the latter.)",
+      "status": "Pending \u2014 awaiting team confirmation",
+      "resolved_by_date": ""
+    }
+  ],
+  "memo_status": "DRAFT \u2014 Open Items Pending"
+}

@@ -1,0 +1,4 @@
+{
+  "INC-01": {"communication_required": "Yes", "partner_reviewed": "Yes", "access_list": "Sarah Whitfield (Partner), David Okoro (Manager), Elena Vasquez (IT/Cyber Specialist)", "standard_file_clearance": "Yes", "resolution": "Root cause confirmed external (spoofed domain), no funds lost, TCWG communication confirmed via Jan 22, 2026 audit committee update."},
+  "INC-02": {"communication_required": "Unconfirmed", "partner_reviewed": "No", "access_list": "Sarah Whitfield (Partner), David Okoro (Manager)", "standard_file_clearance": "No", "resolution": ""}
+}

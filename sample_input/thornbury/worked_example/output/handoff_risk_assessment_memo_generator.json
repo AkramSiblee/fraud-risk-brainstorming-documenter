@@ -1,0 +1,294 @@
+{
+  "topic_coverage_record": [
+    {
+      "topic_id": "A1",
+      "category": "Framing",
+      "status": "Evidenced",
+      "supporting_excerpt": "Sarah opened by reminding everyone to set aside what we know about management from prior years and approach this with a fresh, skeptical mindset.",
+      "source_session_id": "S1",
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": []
+    },
+    {
+      "topic_id": "A2",
+      "category": "Framing",
+      "status": "Evidenced",
+      "supporting_excerpt": "Discussed that Thornbury Manufacturing's contracts often bundle equipment, installation, and service \u2014 creates judgment in how transaction price gets allocated. Also touched on FinPay's transaction-fee revenue timing.",
+      "source_session_id": "S1",
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": []
+    },
+    {
+      "topic_id": "A3",
+      "category": "Framing",
+      "status": "Partially evidenced",
+      "supporting_excerpt": "Brief mention of some inventory shrink noted at the Distribution Pacific warehouse in Q3 reporting. Nobody had more detail on this yet \u2014 flagged to follow up during fieldwork.",
+      "source_session_id": "S1",
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": []
+    },
+    {
+      "topic_id": "B1",
+      "category": "Presumptions",
+      "status": "Evidenced",
+      "supporting_excerpt": "Team agreed revenue recognition fraud risk is low given revenue is generally straightforward and recognized on delivery. No further breakdown discussed.",
+      "source_session_id": "S1",
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": [
+        "rebuttal_not_stream_specific"
+      ]
+    },
+    {
+      "topic_id": "B2",
+      "category": "Presumptions",
+      "status": "Evidenced",
+      "supporting_excerpt": "Reminded the team that per firm methodology, management override must always be considered a fraud risk regardless of the assessed strength of the control environment. Discussed the parent-level manual JE approval deficiency as a potential override vector.",
+      "source_session_id": "S4",
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": [
+        "not_evidenced_at_planning"
+      ]
+    },
+    {
+      "topic_id": "C1",
+      "category": "Fraud Triangle",
+      "status": "Evidenced",
+      "supporting_excerpt": "Priya raised that Distribution Pacific has missed budget for three straight quarters, and there's real pressure from the CFO to hit Q4 numbers given the covenant test coming up in February 2026.",
+      "source_session_id": "S1",
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": []
+    },
+    {
+      "topic_id": "C2",
+      "category": "Fraud Triangle",
+      "status": "Not evidenced",
+      "supporting_excerpt": null,
+      "source_session_id": null,
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": []
+    },
+    {
+      "topic_id": "C3",
+      "category": "Fraud Triangle",
+      "status": "Not evidenced",
+      "supporting_excerpt": null,
+      "source_session_id": null,
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": []
+    },
+    {
+      "topic_id": "D1",
+      "category": "Continuity",
+      "status": "Evidenced",
+      "supporting_excerpt": "The team noted the previously identified control deficiency in the review and approval process for manual journal entries exceeding $250,000 at the parent-company level remains relevant. Management indicated remediation was in progress.",
+      "source_session_id": "S1",
+      "component_source": null,
+      "boilerplate_flag": true,
+      "qualifier_flags": [
+        "remediation_status_not_stated"
+      ]
+    },
+    {
+      "topic_id": "E1",
+      "category": "Known Fraud",
+      "status": "Evidenced",
+      "supporting_excerpt": "Suspected BEC / fraudulent wire transfer attempt at Meridian FinPay (see INC-01); anonymous ethics-hotline complaint re: expense deferral at Distribution Pacific (see INC-02).",
+      "source_session_id": "S2",
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": []
+    },
+    {
+      "topic_id": "E2",
+      "category": "Known Fraud",
+      "status": "Evidenced",
+      "supporting_excerpt": "Group's ethics hotline logged an anonymous complaint on January 8, 2026 alleging that Distribution Pacific's CFO pressured the local finance team to defer roughly $180,000 of Q4 expense recognition.",
+      "source_session_id": "S3",
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": []
+    },
+    {
+      "topic_id": "F1",
+      "category": "IT-Cyber-EUC",
+      "status": "Partially evidenced",
+      "supporting_excerpt": "Elena to follow up on general ITGC testing at both Thornbury Manufacturing and FinPay.",
+      "source_session_id": "S1",
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": []
+    },
+    {
+      "topic_id": "F2",
+      "category": "IT-Cyber-EUC",
+      "status": "Evidenced",
+      "supporting_excerpt": "FinPay's AP team received an email purporting to be from a legitimate vendor requesting an urgent change to banking details ahead of a $340,000 payment; bank froze the transaction before funds left the account.",
+      "source_session_id": "S2",
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": []
+    },
+    {
+      "topic_id": "F3",
+      "category": "IT-Cyber-EUC",
+      "status": "Partially evidenced",
+      "supporting_excerpt": "Noted the goodwill impairment model for the FinPay reporting unit is maintained in a standalone Excel file by the CFO's team.",
+      "source_session_id": "S1",
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": [
+        "no_independent_review_followup"
+      ]
+    },
+    {
+      "topic_id": "G1",
+      "category": "Unpredictability",
+      "status": "Evidenced",
+      "supporting_excerpt": "Agreed to send Marcus for an unannounced count/site visit at the Pacific warehouse in early February, instead of the previously scheduled and communicated March visit.",
+      "source_session_id": "S3",
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": []
+    },
+    {
+      "topic_id": "H1",
+      "category": "Related Parties & SUTs",
+      "status": "Evidenced",
+      "supporting_excerpt": "Thornbury Manufacturing sold a fully depreciated CNC machine to Ridgeline Fabrication Co.; Ridgeline's owner is the brother-in-law of Thornbury Manufacturing's plant GM.",
+      "source_session_id": "S3",
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": []
+    },
+    {
+      "topic_id": "H2",
+      "category": "Related Parties & SUTs",
+      "status": "Partially evidenced",
+      "supporting_excerpt": "Deal closed December 28, 2025. No further discussion of fair value support for the sale price. [S4:] No further fair value documentation has been obtained from management. Remains an open item.",
+      "source_session_id": "S3",
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": [
+        "still_open_at_final"
+      ]
+    },
+    {
+      "topic_id": "I1",
+      "category": "Estimates",
+      "status": "Partially evidenced",
+      "supporting_excerpt": "David noted in passing that the goodwill impairment model for the FinPay reporting unit has shown consistently favorable growth assumptions relative to actual results for the past three years. Not otherwise discussed at this meeting.",
+      "source_session_id": "S4",
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": [
+        "mentioned_not_substantively_discussed"
+      ]
+    },
+    {
+      "topic_id": "J1",
+      "category": "Group",
+      "status": "Not evidenced",
+      "supporting_excerpt": null,
+      "source_session_id": null,
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": [],
+      "notes_for_reviewer": "Planning notes show the group REQUESTING component fraud summaries, but no instance of the group communicating its OWN identified fraud risk factors (e.g. covenant pressure, cyber exposure) outward to component auditors was found in any session."
+    },
+    {
+      "topic_id": "J2",
+      "category": "Group",
+      "status": "Evidenced",
+      "supporting_excerpt": "Thornbury Manufacturing's summary received and reviewed \u2014 comprehensive. FinPay's auditor submitted a one-paragraph summary; David flagged it as thin and will follow up before it can be accepted. Distribution Pacific's summary has still not been received.",
+      "source_session_id": "S4",
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": []
+    },
+    {
+      "topic_id": "J3",
+      "category": "Group",
+      "status": "Evidenced",
+      "supporting_excerpt": "Ethics-hotline complaint at Distribution Pacific escalated to Group Compliance; group audit team addressing via component-level cutoff testing.",
+      "source_session_id": "S3",
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": []
+    },
+    {
+      "topic_id": "J4",
+      "category": "Group",
+      "status": "Not evidenced",
+      "supporting_excerpt": null,
+      "source_session_id": null,
+      "component_source": null,
+      "boilerplate_flag": false,
+      "qualifier_flags": [],
+      "notes_for_reviewer": "B2's discussion covers parent-level manual JE approval specifically, not top-side/consolidating entries at the group-consolidation level \u2014 these are distinct per Skill-Spec \u00a77.J4 and no session addresses the latter."
+    }
+  ],
+  "fraud_risk_register": [
+    {
+      "risk_id": "R1",
+      "risk_description": "Covenant/budget pressure at Distribution Pacific creates incentive to defer expense recognition or otherwise manage results ahead of the Feb 2026 covenant test.",
+      "fraud_triangle_category": "Incentive/Pressure",
+      "assertion": "Cutoff",
+      "accounts_affected": "Operating expenses (Distribution Pacific)",
+      "source": "C1; E1/INC-02; E2",
+      "planned_response": ""
+    },
+    {
+      "risk_id": "R2",
+      "risk_description": "Multi-element revenue arrangements at Thornbury Manufacturing involve judgment in transaction-price allocation; the rebuttal of the revenue-recognition presumption was not tied to a specific revenue stream.",
+      "fraud_triangle_category": "Unclassified",
+      "assertion": "Valuation",
+      "accounts_affected": "Revenue (Thornbury Manufacturing)",
+      "source": "B1",
+      "planned_response": ""
+    },
+    {
+      "risk_id": "R3",
+      "risk_description": "Management override via manual journal entries at the parent level - control deficiency unremediated for a second consecutive year.",
+      "fraud_triangle_category": "Opportunity",
+      "assertion": "Existence",
+      "accounts_affected": "Manual journal entries, parent level",
+      "source": "B2; D1",
+      "planned_response": ""
+    },
+    {
+      "risk_id": "R4",
+      "risk_description": "Business email compromise / fraudulent wire-transfer exposure at Meridian FinPay.",
+      "fraud_triangle_category": "Opportunity",
+      "assertion": "Existence",
+      "accounts_affected": "Cash, accounts payable (Meridian FinPay)",
+      "source": "F2; E1/INC-01",
+      "planned_response": ""
+    },
+    {
+      "risk_id": "R5",
+      "risk_description": "Related-party sale of a CNC machine near fiscal year-end, no fair value support obtained as of the final session.",
+      "fraud_triangle_category": "Rationalization",
+      "assertion": "Presentation & Disclosure",
+      "accounts_affected": "Property, plant & equipment; related-party disclosures",
+      "source": "H1; H2",
+      "planned_response": ""
+    },
+    {
+      "risk_id": "R6",
+      "risk_description": "Goodwill impairment model for the FinPay reporting unit has shown consistently favorable growth assumptions for three consecutive years - potential bias pattern not substantively discussed.",
+      "fraud_triangle_category": "Rationalization",
+      "assertion": "Valuation",
+      "accounts_affected": "Goodwill (Meridian FinPay reporting unit)",
+      "source": "I1",
+      "planned_response": ""
+    }
+  ]
+}
