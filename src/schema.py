@@ -98,12 +98,12 @@ class IngestedPackage:
     prior_year_excerpts: list  # list[PriorYearExcerpt]
 
     def to_json(self, path: str):
-        with open(path, "w") as f:
-            json.dump(_serialize(self), f, indent=2, default=str)
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(_serialize(self), f, indent=2, default=str, ensure_ascii=False)
 
     @staticmethod
     def from_json(path: str) -> "IngestedPackage":
-        with open(path) as f:
+        with open(path, encoding="utf-8") as f:
             d = json.load(f)
         md_dict = dict(d["metadata"])
         md_dict["team_members"] = [_load(TeamMember, tm) for tm in md_dict.get("team_members", [])]
@@ -175,11 +175,11 @@ class ChangelogItem:
 
 
 def load_json_list(path: str, cls):
-    with open(path) as f:
+    with open(path, encoding="utf-8") as f:
         data = json.load(f)
     return [_load(cls, d) for d in data]
 
 
 def dump_json_list(items: list, path: str):
-    with open(path, "w") as f:
-        json.dump([_serialize(i) for i in items], f, indent=2, default=str)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump([_serialize(i) for i in items], f, indent=2, default=str, ensure_ascii=False)

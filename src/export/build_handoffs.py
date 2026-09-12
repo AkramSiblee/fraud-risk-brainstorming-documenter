@@ -7,11 +7,11 @@ B2_J4_KEYWORDS = ("manual", "top-side", "consolidat", "journal")
 
 
 def build(topic_coverage_json: str, register_rows_json: str, out_dir: str):
-    with open(topic_coverage_json) as f:
+    with open(topic_coverage_json, encoding="utf-8") as f:
         topics = json.load(f)
     register_rows = []
     if register_rows_json and os.path.exists(register_rows_json):
-        with open(register_rows_json) as f:
+        with open(register_rows_json, encoding="utf-8") as f:
             register_rows = json.load(f)
 
     # --- JE Testing & Anomaly Screener handoff ---
@@ -34,10 +34,10 @@ def build(topic_coverage_json: str, register_rows_json: str, out_dir: str):
     os.makedirs(out_dir, exist_ok=True)
     je_path = os.path.join(out_dir, "handoff_je_testing_agent.json")
     ramg_path = os.path.join(out_dir, "handoff_risk_assessment_memo_generator.json")
-    with open(je_path, "w") as f:
-        json.dump(je_handoff, f, indent=2)
-    with open(ramg_path, "w") as f:
-        json.dump(ramg_handoff, f, indent=2)
+    with open(je_path, "w", encoding="utf-8") as f:
+        json.dump(je_handoff, f, indent=2, ensure_ascii=False)
+    with open(ramg_path, "w", encoding="utf-8") as f:
+        json.dump(ramg_handoff, f, indent=2, ensure_ascii=False)
     return je_path, ramg_path
 
 

@@ -16,7 +16,7 @@ BORDER = Border(left=THIN, right=THIN, top=THIN, bottom=THIN)
 
 
 def build(register_rows_path: str, client_name: str, output_path: str):
-    with open(register_rows_path) as f:
+    with open(register_rows_path, encoding="utf-8") as f:
         rows = json.load(f)
 
     wb = openpyxl.Workbook()

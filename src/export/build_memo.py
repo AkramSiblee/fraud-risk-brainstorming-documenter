@@ -55,13 +55,13 @@ def _add_body(doc, text, italic=False, bold=False, color=None, size=10.5):
 
 def build(ingested_json, topic_coverage_json, flags_json, register_rows_json, output_path):
     ingested = IngestedPackage.from_json(ingested_json)
-    with open(topic_coverage_json) as f:
+    with open(topic_coverage_json, encoding="utf-8") as f:
         topics = {t["topic_id"]: t for t in json.load(f)}
-    with open(flags_json) as f:
+    with open(flags_json, encoding="utf-8") as f:
         flags = json.load(f)
     register_rows = []
     if register_rows_json and os.path.exists(register_rows_json):
-        with open(register_rows_json) as f:
+        with open(register_rows_json, encoding="utf-8") as f:
             register_rows = json.load(f)
 
     md = ingested.metadata

@@ -145,7 +145,7 @@ def evaluate(ingested: IngestedPackage, topic_records: list, escalation_fields: 
 
 
 def _load_topic_records(path):
-    with open(path) as f:
+    with open(path, encoding="utf-8") as f:
         raw = json.load(f)
     out = []
     for d in raw:
@@ -176,13 +176,13 @@ if __name__ == "__main__":
     topic_records = _load_topic_records(args.topic_coverage_json)
     escalation_fields = {}
     if args.escalation_fields and os.path.exists(args.escalation_fields):
-        with open(args.escalation_fields) as f:
+        with open(args.escalation_fields, encoding="utf-8") as f:
             escalation_fields = json.load(f)
 
     result = evaluate(ingested, topic_records, escalation_fields, eqr_logged=args.eqr_logged)
     os.makedirs(os.path.dirname(args.output) or ".", exist_ok=True)
-    with open(args.output, "w") as f:
-        json.dump(result, f, indent=2)
+    with open(args.output, "w", encoding="utf-8") as f:
+        json.dump(result, f, indent=2, ensure_ascii=False)
 
     print(f"memo_status: {result['memo_status']}")
     print(f"hard_gates ({len(result['hard_gates'])}):")

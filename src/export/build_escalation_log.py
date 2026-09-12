@@ -21,7 +21,7 @@ BORDER = Border(left=THIN, right=THIN, top=THIN, bottom=THIN)
 
 def build(ingested_json: str, escalation_fields_json: str, client_name: str, output_path: str):
     ingested = IngestedPackage.from_json(ingested_json)
-    with open(escalation_fields_json) as f:
+    with open(escalation_fields_json, encoding="utf-8") as f:
         fields = json.load(f)
 
     wb = openpyxl.Workbook()

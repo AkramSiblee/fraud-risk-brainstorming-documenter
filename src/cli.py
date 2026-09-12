@@ -30,7 +30,7 @@ def cmd_ingest(args):
 
 
 def cmd_boilerplate(args):
-    ingested = json.load(open(args.ingested))
+    ingested = json.load(open(args.ingested, encoding="utf-8"))
     prior = [PriorYearExcerpt(**p) for p in ingested["prior_year_excerpts"]]
     records = flag_engine._load_topic_records(args.topic_coverage)
     boilerplate.apply_boilerplate_check(records, prior, threshold=args.threshold)
@@ -43,7 +43,7 @@ def cmd_boilerplate(args):
         if hasattr(r, "notes_for_reviewer"):
             d["notes_for_reviewer"] = r.notes_for_reviewer
         out.append(d)
-    json.dump(out, open(args.topic_coverage, "w"), indent=2)
+    json.dump(out, open(args.topic_coverage, "w", encoding="utf-8"), indent=2, ensure_ascii=False)
     print(f"Boilerplate check applied (threshold={args.threshold}) -> {args.topic_coverage}")
 
 
@@ -52,10 +52,10 @@ def cmd_flag(args):
     topic_records = flag_engine._load_topic_records(args.topic_coverage)
     escalation_fields = {}
     if args.escalation_fields and os.path.exists(args.escalation_fields):
-        escalation_fields = json.load(open(args.escalation_fields))
+        escalation_fields = json.load(open(args.escalation_fields, encoding="utf-8"))
     result = flag_engine.evaluate(ingested, topic_records, escalation_fields, eqr_logged=args.eqr_logged)
     os.makedirs(os.path.dirname(args.output) or ".", exist_ok=True)
-    json.dump(result, open(args.output, "w"), indent=2)
+    json.dump(result, open(args.output, "w", encoding="utf-8"), indent=2, ensure_ascii=False)
     print(f"memo_status: {result['memo_status']}  |  hard_gates: {len(result['hard_gates'])}  |  "
           f"graduated_flags: {len(result['graduated_flags'])}")
 
