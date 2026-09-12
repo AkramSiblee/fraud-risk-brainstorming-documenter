@@ -75,3 +75,73 @@ This tool exports two files other automations in the same audit suite
 consume directly — see `output/handoff_je_testing_agent.json` and
 `output/handoff_risk_assessment_memo_generator.json`, and IO-Spec §5.6–5.7
 for the schema.
+
+## FAQ
+
+**What is this agent for?**
+It turns the raw notes from an engagement team's mandatory ISA 240 / PCAOB
+AS 2401 / AU-C 240 fraud discussion into finished deliverables: a Fraud Risk
+Brainstorming Memo, a Fraud Risk Register, an access-restricted Escalation
+Log, and pre-session checklists. Claude Code does the reading-comprehension
+judgment (did the team actually, meaningfully discuss each required topic);
+deterministic Python code does the parsing, rule-based flagging, and
+Word/Excel generation.
+
+**Where do I put my input files?**
+In a new folder of their own, e.g. `sample_input/<client_name>/`, alongside
+the two example folders. That folder needs exactly one `.xlsx` workbook
+(Engagement Metadata, Team & Components, Session Log, Known/Suspected Fraud
+Log, Whistleblower Hotline Log, and Prior-Year Memo Excerpt tabs) plus one
+`.docx` file per session/component, named as referenced in the Session Log
+tab. Use `sample_input/thornbury/` or `sample_input/castellan/` as a
+template for the tab/column layout.
+
+**How do I actually provide the input to the agent?**
+Run `python src/cli.py ingest <your_folder> -o working/ingested.json`, then
+tell Claude Code to continue — it reads `CLAUDE.md` and works through the
+rest of the operating sequence automatically (topic-coverage judgment,
+boilerplate check, flagging, export).
+
+**Where does the output get saved?**
+`output/` at the repo root, once you run the `export` CLI step: the memo
+(`.docx`), the Fraud Risk Register (`.xlsx`), the Escalation Log (`.xlsx`),
+one checklist per session type (`.docx`), and the two cross-tool handoff
+JSON files. `output/` and `working/` are both gitignored — they're
+per-engagement local files, not something that gets pushed to GitHub.
+
+**Does any of my data leave my machine?**
+No Anthropic API key is used anywhere in this pipeline. The judgment step
+runs as Claude Code itself (the agent you're already talking to), not a
+separate API call — see the "Division of labor" section of `CLAUDE.md`.
+
+**What format do my session notes need to be in?**
+Format-agnostic — plain text, bullet points, or a transcript, as long as
+it's a `.docx` file referenced by the Session Log tab. There's no required
+template for the notes themselves; the agent reads for content, not layout.
+
+**Is the output ready to hand to the audit team as-is?**
+Not without a human read-through. Step 6 of `CLAUDE.md` requires opening the
+generated memo, checking every "Evidenced" line traces to a real excerpt,
+and confirming the hard gates in the Open Items section make sense — then
+reporting the memo's status (Draft vs. Final) to the team. A memo is
+watermarked DRAFT automatically if any hard gate is still open.
+
+**What's a "hard gate" vs. a "flag"?**
+Hard gates block the memo from being marked Final (e.g. no final session
+logged, a known incident never routed for review) — see Skill-Workflow-Spec
+§8. Graduated flags surface calibration concerns (a thin rebuttal, a topic
+only mentioned in passing) without blocking sign-off. Both are computed
+deterministically by `src/flag_engine.py` from what you and the notes
+actually recorded — never inferred or guessed.
+
+**Can I run this on a real engagement, not just the two sample fixtures?**
+Yes — that's the intended use. `sample_input/thornbury/` and
+`sample_input/castellan/` exist only to validate the pipeline (and to show
+you the expected input layout); a real engagement is just another folder
+under `sample_input/` (or anywhere you point `ingest` at) with your own
+workbook and session notes.
+
+**I changed something in `src/` — how do I check I didn't break anything?**
+See "Testing a pipeline change" above — score both fixtures, not just one;
+they deliberately exercise different code paths (group/recurring/ISA vs.
+single-entity/first-year/PCAOB).
